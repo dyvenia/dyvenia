@@ -1,0 +1,27 @@
+site_name: dyvenia on azure platform
+nav:
+    - Home: home.md
+    - "Cloud DevOps": "azure.md"
+    - "Python Analyst":
+      - "How-Tos":
+        - "Loading to Blob Storage" : "loading_to_blob_storage.ipynb"
+        - "Loading to Data Lake" : "loading_to_data_lake.ipynb"
+        - "Running your SQL" : "running_sql_on_lake.ipynb"
+plugins:
+  - search
+  - mkdocs-jupyter
+markdown_extensions:
+  - toc:
+      toc_depth: 3
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+  
+ 
