@@ -1,0 +1,39 @@
+:root {
+    --md-primary-fg-color: #1F1254;
+    --md-primary-bg-color:#00CC99;
+}
+:root > * {
+  --md-footer-bg-color: #1F1254;
+  --md-footer-fg-color: #00CC99;
+}
+
+/*
+
+:root {
+    --md-primary-fg-color: #1F1254;
+    --md-primary-bg-color:#00CC99;
+    --md-footer-fg-color: #1F1254;
+    --md-footer-bg-color: #00CC99;
+    --md-default-bg-color: #090632;
+    --md-default-fg-color: hsla(232,75%,95%,1);
+    --md-default-fg-color--light: #9684E5;
+}
+
+:root > * {
+  --md-code-bg-color: #9684E5;
+  --md-typeset-a-color: #9684E5;
+}
+
+.jp-RenderedHTMLCommon_ h1{
+  color:#9684E5;
+}
+
+
+.md-typeset h1, h2, h3, h4, h5 {
+  color:#9684E5;
+}
+
+.md-typeset h5, h6{
+  color:white;
+}
+*/

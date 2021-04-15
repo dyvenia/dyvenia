@@ -1,7 +1,11 @@
 # Azure
 ## 1. User account setup
 ### 1.1 Assigning roles
-`Home -> Azure Active Directory -> Users -> (click a user) -> Assigned roles -> Add assignments`
+
+Go to the UI on this path:
+
+* `Home -> Azure Active Directory -> Users -> (click a user) -> Assigned roles -> Add assignments`
+
 ### 1.2 Assigning a subscription
 `Home -> Subscriptions -> (click a subscription) -> Access control (IAM) -> Add -> Add role assignment`
 To add an admin user, choose `Add co-administrator` in the `Add` menu instead.
