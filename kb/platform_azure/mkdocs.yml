@@ -7,9 +7,11 @@ nav:
         - "Loading to Blob Storage" : "loading_to_blob_storage.ipynb"
         - "Loading to Data Lake" : "loading_to_data_lake.ipynb"
         - "Running your SQL" : "running_sql_on_lake.ipynb"
+        - "Test" : "Untitled.ipynb"
 plugins:
   - search
-  - mkdocs-jupyter
+  - mkdocs-jupyter:
+      include_source: True
 markdown_extensions:
   - toc:
       toc_depth: 3
