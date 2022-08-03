@@ -12,3 +12,4 @@ python3 path/to/the/file/update_database.py
 ```
 Successfully inserted X rows!
 ```
+5. Push the updated database to the repository!
