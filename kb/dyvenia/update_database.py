@@ -1,7 +1,7 @@
 import sqlite3
 import csv
 
-con = sqlite3.connect("../recruitment/interview.db")
+con = sqlite3.connect("recruitment/interview.db")
 cur = con.cursor()
 
 table_exists = cur.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='Tasks'")
@@ -9,7 +9,7 @@ table_exists = cur.execute("SELECT name FROM sqlite_master WHERE type='table' AN
 if table_exists.fetchall():
     cur.execute("DROP TABLE Tasks")
 
-tasks_file = open("InterviewTasks.csv")
+tasks_file = open("kb/dyvenia/InterviewTasks.csv")
 task = csv.reader(tasks_file)
 
 try:
