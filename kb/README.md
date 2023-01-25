@@ -5,7 +5,7 @@ we prepared for You.
 **Let's start from get into the [Binder](https://mybinder.org/). Open a website and put below link of Github repository in a proper section.**
 
 
-https://github.com/lzuchowska/dyvenia
+https://github.com/dyvenia/dyvenia
 
 
 ![image](https://user-images.githubusercontent.com/94363277/143789397-d377d6f7-c30a-4dd0-b13d-fea2a516bd62.png)
