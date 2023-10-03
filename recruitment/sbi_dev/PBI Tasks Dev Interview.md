@@ -14,7 +14,7 @@
 # Close & Apply
 
 
-1. Hide the "ams" and "ww" tables
+1. **Leave only the 'ww' table visible**
  
 2. **In "ww" table, create a measure, "Total_Units_Sold" that calculates the sum of "quantity"**
 
