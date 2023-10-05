@@ -1,5 +1,12 @@
+# Senior Power BI Developer Dashboarding Tasks
 
-# Query Editor
+Hi there, first of all congratulations for making it until here! The second part of this technical interview is to develop a Power BI Dashboard from scratch using a dataset that we will provide to you. In order to get started, follow the steps listed below:
+
+ 1. **Make sure you have Power BI Desktop downloaded**
+ 2. **Proceed to download the dataset by accessing this [link](https://drive.google.com/drive/folders/1O1nEF63GoECnuFCRGD0KtZZOuFu_Z4IA)**
+ 3. **Open a new .pbix file and proceed to complete the tasks listed below**
+  
+## Query Editor
 
 1. **: Import the two tables, "ams" and "emea", and create a new table that combines the two tables into a single table named "ww". The other two tables can be deleted**
 
@@ -11,18 +18,19 @@
 
 5. **: We know the '"Masterby"' product was discontinued last month, so we want to filter this data from our report to avoid confusion**
 
-# Close & Apply
-
+## Close & Apply
 
 1. **Leave only the 'ww' table visible**
- 
+
 2. **In "ww" table, create a measure, "Total_Units_Sold" that calculates the sum of "quantity"**
 
 3. **Create a new date table, named "Calendar" containing all datest between Janary 1 2013 and December 31 2014**
 
 4. **Make a relationship between the new "Calendar" table and the "ww" table**
 
-# Visuals
+## Visuals
+
+When completing the tasks from this section keep in mind that the End User expects some visual coherence among visualization as well as meaningful titles for each visualization.
 
 1. **Add a date slicer on the extreme left, using the date in the "Calendar" table.**
 2. **Remove the Quarter and Day**
@@ -34,6 +42,4 @@
 6. **Create a map to see which country/region had the highest profits.**
 
 7. **Create a bar chart to determine which products and segments to invest in (highest sales all time)**
-
-# DAX
 
