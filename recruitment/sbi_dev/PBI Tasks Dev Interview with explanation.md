@@ -1,23 +1,20 @@
+# Senior Power BI Developer Dashboarding Tasks - Answers
 
-# Query Editor
+## Query Editor
 
-1. **: Import the two tables, "ams" and "emea", and create a new table that combines the two tables into a single table named "ww". The other two tables can be deleted**
+1. **: Import the two tables, "ams" and "emea", and create a new table that appends the two tables into a single table named "ww". The other two tables can be deleted**
 Use the "Get Data" function to import the excel files, and use "Append Queries as New" function to generate the "ww" table. 
 
-
-2. **: Change the data type of "quantity" to the correct type.**
-*In this case, the quantity is in decimal form. It doesn’t make sense to have 0.2 or 0.5 of a unit sold, does it? So let’s change that to whole number.*
-
-3. **: Convert "Segment" to UPPERCASE**
+2. **: Convert "Segment" to UPPERCASE**
 *On the **Transform** tab, select **Format**, then select **UPPERCASE***
 
-4. **: Change "Month_Name" to "Month"**
+3. **: Change "Month_Name" to "Month"**
 *Double-click the **Month Name** column, and rename to just **Month***
 
-5. **: We know the '"Masterby"' product was discontinued last month, so we want to filter this data from our report to avoid confusion**
+4. **: We know the '"Masterby"' product was discontinued last month, so we want to filter out this data from our report to avoid confusion**
 *In **Query Editor** filter out "Masterby" using test filters.*
 
-# Close & Apply
+## Close & Apply
 
 
 1. **Leave only the 'ww' table visible**
@@ -41,10 +38,10 @@ Use the "Get Data" function to import the excel files, and use "Append Queries a
 4. **Make a relationship between the new "Calendar" table and the "ww" table**
  ![[Pasted image 20230926172825.png]]
 
-# Visuals
+## Visuals
 
 1. **Add a date slicer on the extreme left, using the date in the "Calendar" table.**
-2. **Remove the Quarter and Day**
+2. **If Quarter and Day are present in the slicer, please remove them**
 3. **Change the font size to 10**
 4. **Filter the "blank" year in the slicer.**
 
@@ -52,9 +49,9 @@ Use the "Get Data" function to import the excel files, and use "Append Queries a
 5. **Create a line chart to see which month and year had the highest profit**
 *From the Fields pane, drag the **Profit** field to a blank area on the report canvas. By default, Power BI displays a column chart with one column, Profit and drag the **Date** field from your Calendar table*
 
-6. **Create a map to see which country/region had the highest profits.**
+6. **Create a map to display  where the profits were made**
 
-7. **Create a bar chart to determine which products and segments to invest in (highest sales all time)**
+7. **Create a bar chart to determine which products and segments to invest in (highest sales of all time)**
 
 *Answer should be Rimforsa - Small Business and Government*
 
