@@ -8,7 +8,7 @@ Hi there, first of all congratulations for making it until here! The second part
   
 ## Query Editor
 
-1. **: Import the two tables, "ams" and "emea", and create a new table that appends the two tables into a single table named "ww". The other two tables can be deleted**
+1. **: Import the two tables, "ams" and "emea", and create a new table that appends the two tables into a single table named "ww", from now on, the tables "ams" and "emea" will not be needed**
 
 2. **: Convert "Segment" to UPPERCASE**
 
@@ -16,7 +16,7 @@ Hi there, first of all congratulations for making it until here! The second part
 
 4. **: We know the '"Masterby"' product was discontinued last month, so we want to filter out this data from our report to avoid confusion**
 
-## Close & Apply
+## Data Modelling
 
 1. **Leave only the 'ww' table visible**
 

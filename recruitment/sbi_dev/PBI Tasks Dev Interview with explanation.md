@@ -2,19 +2,19 @@
 
 ## Query Editor
 
-1. **: Import the two tables, "ams" and "emea", and create a new table that appends the two tables into a single table named "ww". The other two tables can be deleted**
+1. **: Import the two tables, "ams" and "emea", and create a new table that appends the two tables into a single table named "ww", from now on, the tables "ams" and "emea" will not be needed**
 Use the "Get Data" function to import the excel files, and use "Append Queries as New" function to generate the "ww" table. 
 
-2. **: Convert "Segment" to UPPERCASE**
+1. **: Convert "Segment" to UPPERCASE**
 *On the **Transform** tab, select **Format**, then select **UPPERCASE***
 
-3. **: Change "Month_Name" to "Month"**
+1. **: Change "Month_Name" to "Month"**
 *Double-click the **Month Name** column, and rename to just **Month***
 
-4. **: We know the '"Masterby"' product was discontinued last month, so we want to filter out this data from our report to avoid confusion**
+1. **: We know the '"Masterby"' product was discontinued last month, so we want to filter out this data from our report to avoid confusion**
 *In **Query Editor** filter out "Masterby" using test filters.*
 
-## Close & Apply
+## Data Modelling
 
 
 1. **Leave only the 'ww' table visible**
@@ -22,7 +22,7 @@ Use the "Get Data" function to import the excel files, and use "Append Queries a
 2. **In "ww" table, create a measure, "Total_Units_Sold" that calculates the sum of "quantity"**
 *DAX: Total_Units_Sold = SUM(ww[Quantity])*
 
-3. **Create a new date table, named "Calendar" containing all datest between Janary 1 2013 and December 31 2014**. This table should contain 3 columns: Date (full date), Month, Year
+3. **Create a new date table, named "Calendar" containing all dates between January 1 2013 and December 31 2014**. This table should contain 3 columns: Date (full date), Month, Year
 
 - In order to create a 'Calendar table', go to the 'Table view'
 - Once there go to the 'Table tools' tab and click on 'New table'
