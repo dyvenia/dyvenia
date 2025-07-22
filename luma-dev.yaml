@@ -1,0 +1,37 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: luma-ai
+  namespace: argocd
+spec:
+  syncPolicy:
+    automated: {}
+    syncOptions:
+      - CreateNamespace=true
+  destination:
+    namespace: luma-ai-dev
+    server: https://kubernetes.default.svc
+  project: luma-ai
+  sources:
+    - repoURL: 'ghcr.io/dyvenia'
+      targetRevision: 0.0.26
+      chart: luma-ai
+      helm:
+        passCredentials: true
+        valueFiles:
+          - $values/etc/helm_values/dyvenia-internal-dev/values.yaml
+          - $values/etc/helm_values/dyvenia-internal-dev/secrets.yaml
+        parameters:
+          - name: app.image.tag
+            value: 0.1.15
+          - name: ollama.image.tag
+            value: 0.1.15
+          - name: worker.image.tag
+            value: 0.1.15
+          - name: frontend.image.tag
+            value: 0.1.15
+          - name: postgresql.image.tag
+            value: 0.1.15
+    - repoURL: 'git@github.com:dyvenia/luma-ai.git'
+      targetRevision: push_changes_to_envconfig
+      ref: values
